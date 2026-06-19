@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gado-Gado Premium Kudus - Toko Resmi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Gado-Gado 2 Putra Jaya - Kudus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -31,12 +31,46 @@
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         header { text-align: center; padding: 10px 0; position: relative; }
         .greeting { font-size: 11px; color: var(--secondary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; }
-        header h1 { font-family: 'Playfair Display', serif; font-size: 2.6rem; color: var(--primary); line-height: 1.2; }
+        
+        /* JUDUL UTAMA GABUNGAN GADO-GADO + 2 PUTRA JAYA */
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1.1;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0 rgba(230, 126, 34, 0.15);
+        }
+        .main-title .sub-brand {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #b45309;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 2px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 2px;
+            letter-spacing: 2px;
+            border: 2px solid #f59e0b;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
+            text-shadow: none;
+        }
+        .main-title .sub-brand i {
+            color: #b45309;
+            font-size: 1.2rem;
+        }
+        .main-title .sub-brand .jaya-text {
+            color: #dc2626;
+            font-weight: 900;
+        }
+        
         .loc-badge { display: inline-block; background-color: #f3e9dc; color: var(--primary-light); padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; margin-top: 5px; }
         .badge-verified { font-size: 11px; color: #22c55e; margin-top: 5px; display: flex; align-items: center; justify-content: center; gap: 4px; }
         .share-group { position: absolute; top: 10px; right: 10px; display: flex; gap: 5px; }
         .share-btn { background: #fff; border: 1px solid #e2e8f0; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); cursor: pointer; box-shadow: var(--card-shadow); font-size: 12px; }
-        .filter-container { display: flex; gap: 8px; justify-content: center; }
+        .filter-container { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
         .filter-btn { background: #fff; border: 1px solid #e2e8f0; padding: 6px 14px; border-radius: 20px; font-size: 11px; font-weight: 600; cursor: pointer; color: var(--primary); }
         .filter-btn.active { background: var(--primary); color: #fff; }
         .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -59,7 +93,8 @@
         .porsi-title { color: var(--primary); font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
         .porsi-price { color: var(--secondary); font-size: 20px; font-weight: 800; margin-bottom: 4px; }
         .button-group { display: flex; gap: 10px; margin-top: 12px; }
-        .btn { flex: 1; text-align: center; padding: 12px 8px; border-radius: 10px; text-decoration: none; color: white; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        .btn { flex: 1; text-align: center; padding: 12px 8px; border-radius: 10px; text-decoration: none; color: white;
+              font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; }
         
         .btn-wa-1 { background-color: var(--success); animation: shakeBtn 4s infinite ease-in-out; }
         .btn-wa-2 { background-color: #128C7E; animation: shakeBtn 4s infinite ease-in-out; animation-delay: 0.5s; }
@@ -95,8 +130,7 @@
         .modal-close { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 30px; cursor: pointer; }
         .toast-notif { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 8px 16px; font-size: 11px; border-radius: 20px; display: none; z-index: 3000; }
         
-        .system-info-bar { width: 100%; background: #222; border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; overflow:
-        hidden; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
+        .system-info-bar { width: 100%; background: #222; border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; overflow: hidden; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
         .system-marquee { flex: 1; white-space: nowrap; overflow: hidden; display: block; position: relative; height: 16px; }
         .marquee-content { display: inline-block; position: absolute; width: 100%; height: 100%; margin: 0; transform: translateX(100%); animation: systemMarquee 25s linear infinite; color: #25D366; font-size: 12px; font-weight: 700; font-family: monospace; }
         @keyframes systemMarquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
@@ -118,12 +152,21 @@
         
         <header>
             <div class="greeting" id="timeGreeting">Selamat Datang!</div>
-            <h1>Gado-Gado</h1>
+            
+            <!-- JUDUL GABUNGAN GADO-GADO + 2 PUTRA JAYA -->
+            <h1 class="main-title">
+                Gado-Gado
+                <span class="sub-brand">
+                    <i class="fa-solid fa-crown"></i> 2 Putra <span class="jaya-text">Jaya</span> <i class="fa-solid fa-crown"></i>
+                </span>
+            </h1>
+            
             <div class="loc-badge"><i class="fa-solid fa-location-dot"></i> Pedak Klumpit RT 3 RW 1, Gebog, Kudus</div>
             <div class="badge-verified"><i class="fa-solid fa-circle-check"></i> Penjual Terverifikasi Resmi</div>
             <div class="share-group">
                 <button class="share-btn" onclick="copyStoreLink()" title="Salin Link"><i class="fa-solid fa-link"></i></button>
-                <button class="share-btn" onclick="shareToWhatsAppChat()" title="Share WA" style="background:#dcfce7; color:var(--success); border-color:#bbf7d0;"><i class="fa-brands fa-whatsapp"></i></button>
+                <button class="share-btn" onclick="shareToWhatsAppChat()" title="Share WA" style="background:#dcfce7; color:var(--success);
+                    border-color:#bbf7d0;"><i class="fa-brands fa-whatsapp"></i></button>
             </div>
         </header>
 
@@ -183,7 +226,7 @@
             </div>
         </div>
 
-        <!-- MENU KILOAN (TAG AKHIRNYA SUDAH SINKRON MENJADI PORSI GROSIR) -->
+        <!-- MENU KILOAN -->
         <div class="menu-container search-item cat-kiloan">
             <div class="image-wrapper">
                 <img src="https://i.postimg.cc/MKX9v66C/IMG-20260619-WA0005.jpg" class="main-image" onclick="openModalView(this.src)">
@@ -224,7 +267,7 @@
                 <span><i class="fa-solid fa-map-location-dot"></i> Peta Lokasi Operasional</span>
                 <span class="maps-review-btn" onclick="alert('Membuka ulasan Google Maps Toko...')">Lihat Ulasan Maps</span>
             </div>
-            <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.752063!2d110.8244891!3d-6.7701545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70db2f35db310b%3A0xfd9d0b175cf6782f!2sDua%20Putra%20Jaya!5e0!3m2!1sid!2sid!4v1718816000000" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31639.43547606175!2d110.835479!3d-6.797288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1718816000000" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
 
         <div class="badge-container">
@@ -238,7 +281,7 @@
             <h3>Hubungi / Pesan Langsung:</h3>
             <p>Alamat: Pedak Klumpit RT 3 RW 1, Gebog, Kudus.</p>
             <p>Pengiriman COD Kurir Internal Toko Area Kudus / Kirim Ekspedisi Luar Wilayah via Chat WA.</p>
-            <p style="opacity: 0.5; font-size: 10px; margin-top: 5px;">© 2026 Toko Gado-Gado Premium Kudus.</p>
+            <p style="opacity: 0.5; font-size: 10px; margin-top: 5px;">© 2026 Gado-Gado 2 Putra Jaya - Kudus.</p>
             <div class="footer-quote">"Cita rasa kuliner tradisional, diolah higienis penuh cinta."</div>
             <a href="#" class="back-top"><i class="fa-solid fa-arrow-up"></i> Kembali ke Atas</a>
         </footer>
