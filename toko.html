@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gado-Gado - Renyah & Manis Alami</title>
+    <style>
+        /* Reset Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fcf8f2;
+            color: #4a3728;
+            line-height: 1.6;
+            padding: 10px;
+        }
+        
+        /* Header Toko */
+        header {
+            text-align: center;
+            padding: 30px 10px 10px 10px;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            color: #b05a1a;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1rem;
+            color: #6d523d;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* CONTAINER UNTUK KARTU MENU */
+        .menu-container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 500px; /* Pas dan rapi untuk layar HP */
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #f3f4f6;
+        }
+
+        .menu-content {
+            padding: 20px;
+        }
+
+        .section-porsi {
+            margin-bottom: 10px;
+        }
+
+        .porsi-title {
+            margin: 0 0 4px 0;
+            color: #b05a1a;      
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .porsi-price {
+            margin: 0 0 12px 0;
+            color: #e67e22;      
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px 6px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-wa-1 { background-color: #25D366; }
+        .btn-wa-1:hover { background-color: #20ba5a; }
+        
+        .btn-wa-2 { background-color: #128C7E; }
+        .btn-wa-2:hover { background-color: #0e6c61; }
+
+        .separator {
+            border: none;
+            border-top: 1px dashed #e5e7eb;
+            margin: 15px 0;
+        }
+
+        /* Bagian Bawah / Info Kontak */
+        footer {
+            background-color: #3e2723;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer h3 {
+            color: #ffb03b;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        footer p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+        .maps-link {
+            color: #ffb03b;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header Nama Toko -->
+    <header>
+        <h1>Gado-Gado</h1>
+        <p>Jajanan Tradisional Garingan Premium dengan Racikan Gula Aren Asli</p>
+    </header>
+
+    <!-- ==================== KARTU MENU 1: PORSI ECERAN ==================== -->
+    <div class="menu-container">
+      
+        <!-- Foto eceran dari Postimages -->
+        <img src="https://i.postimg.cc/L6hxn997/IMG-20260619-WA0004.jpg" alt="Porsi Eceran Gado-Gado" class="main-image">
+
+        <div class="menu-content">
+        
+            <!-- Varian 1.000 -->
+            <div class="section-porsi">
+                <h3 class="porsi-title">Porsi Ekonomis (Kemasan Paling Kiri)</h3>
+                <p class="porsi-price">Rp 1.000</p>
+                <div class="button-group">
+                    <a href="https://wa.me/6285747803520?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%201.000" target="_blank" class="btn btn-wa-1">Order (Admin 1)</a>
+                    <a href="https://wa.me/6285225145267?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%201.000" target="_blank" class="btn btn-wa-2">Order (Admin 2)</a>
+                </div>
+            </div>
+
+            <hr class="separator">
+
+            <!-- Varian 1.500 -->
+            <div class="section-porsi">
+                <h3 class="porsi-title">Porsi Sedang (Kemasan Tengah)</h3>
+                <p class="porsi-price">Rp 1.500</p>
+                <div class="button-group">
+                    <a href="https://wa.me/6285747803520?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%201.500" target="_blank" class="btn btn-wa-1">Order (Admin 1)</a>
+                    <a href="https://wa.me/6285225145267?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%201.500" target="_blank" class="btn btn-wa-2">Order (Admin 2)</a>
+                </div>
+            </div>
+
+            <hr class="separator">
+
+            <!-- Varian 2.000 -->
+            <div class="section-porsi">
+                <h3 class="porsi-title">Porsi Puas (Kemasan Kanan)</h3>
+                <p class="porsi-price">Rp 2.000</p>
+                <div class="button-group">
+                    <a href="https://wa.me/6285747803520?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%202.000" target="_blank" class="btn btn-wa-1">Order (Admin 1)</a>
+                    <a href="https://wa.me/6285225145267?text=Halo,%20saya%20mau%20order%20Gado-Gado%20Porsi%202.000" target="_blank" class="btn btn-wa-2">Order (Admin 2)</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ==================== KARTU MENU 2: PORSI KILOAN ==================== -->
+    <div class="menu-container">
+      
+        <!-- Foto kiloan dari Postimages -->
+        <img src="https://i.postimg.cc/MKX9v66C/IMG-20260619-WA0005.jpg" alt="Porsi Kiloan Gado-Gado" class="main-image">
+
+        <div class="menu-content">
+        
+            <!-- Varian Kiloan / Request -->
+            <div class="section-porsi">
+                <h3 class="porsi-title">Porsi Kiloan & Bebas Request Harga</h3>
+                <p class="porsi-price" style="font-size: 14px; color: #d97706; font-weight: bold;">Tersedia Ukuran 1/4 Kg (Beli 4 bungkus pas 1 Kg) / Bebas Request Sesuai Budget Kamu</p>
+                <div class="button-group">
+                    <a href="https://wa.me/6285747803520?text=Halo,%20saya%20mau%20request%20harga%20/%20pesan%20kiloan%20Gado-Gado" target="_blank" class="btn btn-wa-1">Tanya Harga (Admin 1)</a>
+                    <a href="https://wa.me/6285225145267?text=Halo,%20saya%20mau%20request%20harga%20/%20pesan%20kiloan%20Gado-Gado" target="_blank" class="btn btn-wa-2">Tanya Harga (Admin 2)</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bagian Footer Informasi Lokasi -->
+    <footer>
+        <h3>Hubungi Kami / Info Pemesanan:</h3>
+        <p>📍 <a href="https://maps.app.goo.gl/vEoZ3bTD5tyxiozp9" target="_blank" class="maps-link">Menerima COD area Kudus & Sekitarnya / Kirim Paket</a></p>
+        <p style="margin-top: 8px; opacity: 0.8; font-size: 11px;">&copy; 2026 Toko Gado-Gado. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
